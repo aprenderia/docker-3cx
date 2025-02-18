@@ -1,0 +1,16 @@
+version: '3.3'
+services:
+  3cx:
+    image: ekondayan/3cx:latest
+    container_name: 3cx
+    restart: always
+    ports:
+      - "5015:5015"
+      - "5060:5060"
+      - "5090:5090"
+      - "80:80"
+      - "443:443"
+      - "9000-9500:9000-9500/udp"
+    volumes:
+      - ./data:/var/lib/3cxpbx
+    privileged: true
