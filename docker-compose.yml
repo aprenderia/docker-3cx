@@ -1,7 +1,7 @@
 version: '3.3'
 services:
   3cx:
-    image: ekondayan/3cx:latest
+    image: farfui/3cx:latest
     container_name: 3cx
     restart: always
     ports:
